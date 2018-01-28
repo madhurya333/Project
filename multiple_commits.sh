@@ -2,15 +2,11 @@
 
 # to collect multiple commits.
 
-for number in {1..10}
+for number in {1..250}
 do
 echo -n "#" >> README.md
 git add --all
 git commit -m "multiple commit"
-git push -q
-	if [$((number%5)) == 0]
- 	then
-	sed -i '$d' README.txt
-	fi
+git push 
 done
 exit 0
