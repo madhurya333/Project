@@ -9,3 +9,6 @@ install:
 
 script: 
   - ./check_dead_links
+
+python:
+  - ./run_python.py
