@@ -7,8 +7,8 @@ do
 echo -n "#" >> README.md
 git add --all
 git commit -m "multiple commit"
-git push
-	if [number%5 == 0]
+git push -q
+	if [$((number%5)) == 0]
  	then
 	sed -i '$d' README.txt
 	fi
